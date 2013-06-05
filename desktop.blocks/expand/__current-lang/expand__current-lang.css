@@ -1,0 +1,16 @@
+.expand__current-lang
+{
+	padding: 4px 26px 4px 10px;    
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+    display: block; 
+
+    background: #ffb04c;
+    
+    font-size: 12px;
+	list-style: none;
+	cursor: pointer;
+}

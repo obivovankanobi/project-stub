@@ -1,0 +1,8 @@
+.content__left-side
+{
+	background: url(people.png) no-repeat 0 24px;
+	height: 400px;
+    width: 517px;
+    float: left;
+    margin-left: -5px;
+}

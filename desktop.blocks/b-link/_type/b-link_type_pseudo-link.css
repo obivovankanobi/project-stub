@@ -1,0 +1,7 @@
+.b-link_type_pseudo-link
+{
+ 	font-size: 17px;
+    cursor: pointer;
+    display: block;
+    border-bottom: 1px dotted #921f00;	
+}

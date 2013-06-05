@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Title of the page',
+    title: 'Hombilbre',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '_index.css', ie: false },
@@ -12,22 +12,115 @@
     ],
     content:[
         {
-            block: 'header',
+            block: 'wrap',
             content: [
-                'header content goes here'
+               {
+                    block: 'header',
+                    content: [
+                        {
+                            elem: 'heading',
+                            tag: 'h1',
+                            content: 'Homlibre'
+                        },
+                        {
+                            block: 'menu',
+                            tag: 'ul',
+                            content : [
+                                {
+                                    elem: 'item',
+                                    tag: 'li',
+                                    content: [
+                                        {
+                                            block: 'b-link', 
+                                            mix: [{ block: 'show-login'}],
+                                            mods: { type: 'pseudo-link' },                                        
+                                            content: 'Вход'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    tag: 'li',
+                                    content: [
+                                        {
+                                            block: 'b-link', 
+                                            mix: [{ block: 'show-sign-up'}],
+                                            mods: { type: 'pseudo-link' },                                         
+                                            content: 'Регистрация'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    tag: 'li',
+                                    content: [
+                                        {
+                                           block: 'expand',
+                                           content: [
+                                                {
+                                                    elem: 'current-lang',
+                                                    tag: 'span',
+                                                    content: 'русский'
+                                                },
+                                                {
+                                                    block: 'menu',
+                                                    mods: { expand: 'yes'},
+                                                    tag: 'ul',
+                                                    content: [
+                                                        {                                                            
+                                                            elem: 'list-item',
+                                                            tag: 'li',
+                                                            content: 'русский'
+                                                        },
+                                                        {
+                                                            elem: 'list-item',
+                                                            tag: 'li',
+                                                            content: 'албанский'
+                                                        },
+                                                        {
+                                                           elem: 'list-item',
+                                                           tag: 'li',
+                                                           content: 'турецкий'
+                                                        },
+                                                        {
+                                                           elem: 'list-item',
+                                                           tag: 'li',
+                                                           content: 'французкий'
+                                                        }
+                                                    ]                                                 
+                                                }
+                                           ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        } 
+                    ]
+               },
+               {
+                    block: 'content',
+                    content: [
+                        {
+                            elem: 'left-side'
+                        },
+                        {
+                            elem: 'right-side',
+                            content: [
+                                {
+                                    block: 'multi-colored-heading',
+                                    tag: 'h2',
+                                    content: [
+                                        {
+
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                                        
+                    ]
+               }
             ]
-        },
-        {
-            block: 'content',
-            content: [
-                'main content'
-            ]
-        },
-        {
-            block: 'footer',
-            content: [
-                'footer content goes here'
-            ]
-        }
+        }        
     ]
 })

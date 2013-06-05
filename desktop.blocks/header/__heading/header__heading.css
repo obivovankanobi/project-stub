@@ -1,0 +1,9 @@
+.header__heading
+{
+	width: 250px;
+	height: 66px; 
+	overflow: hidden;
+	text-indent: -999px;    
+	margin: 2px 0 0 -10px;
+	float: left;
+}

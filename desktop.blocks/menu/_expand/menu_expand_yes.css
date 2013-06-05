@@ -1,0 +1,17 @@
+.menu_expand_yes
+{
+    width: 138px;
+    position: absolute;
+    left: -60px;
+    top: 0px;
+    padding: 8px 0;
+    background: #ffb04c;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    
+    -moz-box-shadow:  0 0 10px #000; /* Firefox */  
+    -webkit-box-shadow:  0 0 10px #000; /* Safari, Chrome */  
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2); /* CSS3 */
+}
